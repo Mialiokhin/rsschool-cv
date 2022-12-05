@@ -25,3 +25,14 @@ Since childhood, my hobby has been frontend development. I created some simple p
 At the moment, I have decided to get a new profession as a front-end developer, because I like it and enjoy it. I want to understand a lot of technologies and become a sought-after specialist.
 
 ---
+
+### Skills:
+
+- HTML5
+- CSS3(Bootstrap)
+- Java Script (basics)
+- GitHub
+- VS Code, WebStorm
+- Figma
+
+---
