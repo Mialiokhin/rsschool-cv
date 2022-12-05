@@ -67,3 +67,9 @@ if (Number.isSafeInteger(number/2) === true) {
 - YouTube blog [**Vladilen Minin**](https://vladilen.notion.site/Roadmap-YouTube-0b917095c1ec424e9574c2ede36efab9) (in progress)
 
 ---
+
+### Languages:
+
+- **English** - Streamline course A2, A2+ in progress
+- **Russian** - Native
+- **Polish** - A1
