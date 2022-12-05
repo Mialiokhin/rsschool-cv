@@ -50,3 +50,12 @@ if (Number.isSafeInteger(number/2) === true) {
 ```
 
 ---
+
+### Work experience:
+
+- [**Stepic_homework_1**](https://mialiokhin.github.io/Stepic-homework1/) - _Learn HTML, CSS_
+- [**Stepik_homework_2**](https://mialiokhin.github.io/stepik-homework2_Bootstrap5/) - _Learn Bootstrap_
+- [**ITDoctor_Bootstrap**](https://mialiokhin.github.io/ITDoctor_Bootstrap5/) - _Learn Bootstrap_
+- [**Stepic_homework_3**](https://mialiokhin.github.io/stepic-homework3_FINAL/) - _Training adaptive layout_
+
+---
