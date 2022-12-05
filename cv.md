@@ -36,3 +36,17 @@ At the moment, I have decided to get a new profession as a front-end developer, 
 - Figma
 
 ---
+
+### Code example:
+
+**Even or Odd** KATA from Codewars: Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+```
+function even_or_odd(number) {
+if (Number.isSafeInteger(number/2) === true) {
+    return 'Even'
+} else return 'Odd'
+}
+```
+
+---
