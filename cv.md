@@ -59,6 +59,7 @@ if (Number.isSafeInteger(number/2) === true) {
 - [**Stepic_homework_3**](https://mialiokhin.github.io/stepic-homework3_FINAL/) - _Training adaptive layout_
 
 ---
+
 ### Courses:
 
 - CS-50 video-course
