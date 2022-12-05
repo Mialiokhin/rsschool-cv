@@ -59,3 +59,11 @@ if (Number.isSafeInteger(number/2) === true) {
 - [**Stepic_homework_3**](https://mialiokhin.github.io/stepic-homework3_FINAL/) - _Training adaptive layout_
 
 ---
+### Courses:
+
+- CS-50 video-course
+- JS manual [**learn.javascript.ru**](https://learn.javascript.ru/) and [**MDN**](https://developer.mozilla.org/ru/) (in progress)
+- Stepik.org [**«Веб-разработка для начинающих: HTML и CSS»**](https://stepik.org/cert/1592428)
+- YouTube blog [**Vladilen Minin**](https://vladilen.notion.site/Roadmap-YouTube-0b917095c1ec424e9574c2ede36efab9) (in progress)
+
+---
