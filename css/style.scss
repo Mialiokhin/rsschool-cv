@@ -321,6 +321,15 @@ body {
   display: flex;
   flex-flow: column;
   text-decoration: none;
+  a{
+    text-decoration: none;
+    @include li-p();
+    padding: 0;
+    color: $bg-blue;
+  }
+  p {
+    @include li-p();
+  }
   h2 {
     @include h2()
   }

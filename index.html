@@ -160,12 +160,25 @@
             </section>
             <section class="section section-code">
                 <h2>Code example</h2>
+                <p><a href="https://www.codewars.com/kata/5f709c8fb0d88300292a7a9d/javascript" target="_blank">Who is the killer?</a> KATA from Codewars:<br>Given a dictionary with all the names of the suspects and everyone that they have seen on that day and also a list of the names of the dead people. You need to return the name of the one killer.</p>
                 <code>
-                    function even_or_odd(number) {<br>
-                    if (Number.isSafeInteger(number/2) === true) {<br>
-                    return 'Even'<br>
-                    } else return 'Odd'<br>
-                    }
+                    function killer(suspectInfo, dead) {<br>
+                    let Killer = ''<br>
+                    let allKills = 0<br>
+                    for ([key,value] of Object.entries(suspectInfo)){<br>
+                    let count = 0<br>
+                    dead.forEach(x => {<br>
+                    if (value.includes(x)) {<br>
+                    count+=1<br>
+                    }<br>
+                    if (count > allKills) {<br>
+                    allKills = count<br>
+                    Killer = key<br>
+                    }<br>
+                    })<br>
+                    }<br>
+                    return Killer<br>
+                    }<br>
                 </code>
                 </section>
         </div>
