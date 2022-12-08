@@ -317,6 +317,22 @@ body {
     padding: 0;
   }
 }
+.section-code{
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  h2 {
+    @include h2()
+  }
+  code {
+    margin-left: 50px;
+    margin-right: 50px;
+    @include li-p();
+    background-color: $gray-color; opacity:0.6;
+
+  }
+}
+
 //footer
 footer {
   display: flex;

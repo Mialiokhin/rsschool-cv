@@ -14,14 +14,14 @@
     <header class="header">
         <nav class="header-nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#code" class="nav-link">Сode</a></li>
-                <li class="nav-item"><a href="#courses" class="nav-link">Сourses</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#languages" class="nav-link, nav-link__lang" >Languages</a></li>
+                <li class="nav-item"><a data-goto=".section-contacts" href="#" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a data-goto=".section-summary" href="#" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a data-goto=".section-skills" href="#" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a data-goto=".section-code" href="#" class="nav-link">Сode</a></li>
+                <li class="nav-item"><a data-goto=".section-courses" href="#" class="nav-link">Сourses</a></li>
+                <li class="nav-item"><a data-goto=".section-projects" href="#" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a data-goto=".section-education" href="#" class="nav-link">Education</a></li>
+                <li class="nav-item"><a data-goto=".section-languages" href="#" class="nav-link nav-link__lang" >Languages</a></li>
             </ul>
         </nav>
     </header>
@@ -158,6 +158,16 @@
                     <li><a href="https://mialiokhin.github.io/ITDoctor_Bootstrap5/">ITDoctor_Bootstrap</a> - learn Bootstrap</li>
                 </ul>
             </section>
+            <section class="section section-code">
+                <h2>Code example</h2>
+                <code>
+                    function even_or_odd(number) {<br>
+                    if (Number.isSafeInteger(number/2) === true) {<br>
+                    return 'Even'<br>
+                    } else return 'Odd'<br>
+                    }
+                </code>
+                </section>
         </div>
     </main>
     <footer class="footer">
@@ -183,6 +193,6 @@
         </div>
     </footer>
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>

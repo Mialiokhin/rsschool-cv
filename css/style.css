@@ -338,6 +338,33 @@ body {
   padding: 0;
 }
 
+.section-code {
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+}
+.section-code h2 {
+  text-align: center;
+  background-color: #336666;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.section-code code {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+  color: #E7E2DD;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #383838;
+  opacity: 0.6;
+}
+
 footer {
   display: flex;
   flex-flow: row;
