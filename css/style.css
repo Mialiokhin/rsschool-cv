@@ -173,6 +173,7 @@ body {
 }
 .section-contacts li .linkedin-link, .section-contacts li .discord-link, .section-contacts li .email-link, .section-contacts li .git-link, .section-contacts li .telegram-link, .section-contacts li .locations-link {
   display: flex;
+  position: relative;
   text-decoration: none;
   align-items: center;
   text-align: center;
@@ -194,6 +195,9 @@ body {
 }
 .section-contacts li :hover img, .section-contacts li :hover .soc-text {
   filter: opacity(0.5) drop-shadow(0 0 0 #336666);
+}
+.section-contacts :hover {
+  right: 20px;
 }
 
 .section-skills h2 {
