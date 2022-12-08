@@ -26,10 +26,6 @@ h2 {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -60,10 +56,12 @@ ul {
   width: 100%;
   margin: 0 auto;
   border: 1px solid white;
+  /*background-color: $gray-color;*/
+  background-image: url("../assets/img/bg.png");
 }
 
 body {
-  background-color: #383838;
+  background-color: white;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -71,23 +69,22 @@ body {
 }
 
 .header .header-nav ul {
-  list-style: none; /*убираем маркеры списка*/
-  margin: 0; /*убираем отступы*/
-  padding-left: 0; /*убираем отступы*/
-  margin-top: 25px; /*делаем отступ сверху*/
-  background: #383838; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
-  height: 50px; /*задаем высоту*/
+  list-style: none;
+  padding-left: 0;
+  margin: 25px 0 0 0;
+  background: #383838;
+  height: 50px;
   display: flex;
   justify-content: right;
   flex-wrap: wrap;
 }
 .header .header-nav a {
-  text-decoration: none; /*убираем подчеркивание текста ссылок*/
-  background: #383838; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
-  color: #fff; /*меняем цвет ссылок*/
-  padding: 0 15px; /*добавляем отступ*/
-  font-family: "Roboto", sans-serif; /*меняем шрифт*/
-  line-height: 50px; /*ровняем меню по вертикали*/
+  text-decoration: none;
+  background: #383838;
+  color: #fff;
+  padding: 0 15px;
+  font-family: "Roboto", sans-serif;
+  line-height: 50px;
   display: block;
   border-right: 1px solid #336666; /*добавляем бордюр справа*/
   -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
@@ -118,6 +115,8 @@ body {
 }
 
 .main-left {
+  background-color: #383838;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -151,6 +150,7 @@ body {
 .section-profile .avatar {
   display: flex;
   justify-content: center;
+  padding-top: 30px;
 }
 .section-profile .avatar img {
   width: auto;
@@ -336,6 +336,51 @@ body {
 .section-courses a, .section-projects a {
   text-decoration: none;
   padding: 0;
+}
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  background-color: #336666;
+}
+
+.rsschool-logo img {
+  height: 50px;
+}
+
+.my-github {
+  display: flex;
+  flex-flow: row;
+}
+.my-github .git-link__container img {
+  height: 50px;
+}
+.my-github .git-p__container p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+  color: #E7E2DD;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.copyright span {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+  color: #E7E2DD;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
