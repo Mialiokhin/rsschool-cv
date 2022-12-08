@@ -321,34 +321,59 @@ body {
 footer {
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
   background-color: $bg-blue;
+  padding-left: 30px;
+  padding-right: 30px;
   }
 .rsschool-logo {
   img {
     height: 50px;
   }
+  }
+.rsschool-logo:hover{
+  filter: invert(100%) ;
 }
+
 .my-github{
   display: flex;
   flex-flow: row;
   .git-link__container{
     img {
       height: 50px;
-    }
+      filter: invert(100%)
+          }
+
   }
   .git-p__container{
+    a {
+      text-decoration: none;
+
+    }
     p {
       @include li-p();
       font-weight: 700;
-    }
+      padding-left: 10px;
+      color: black;
+          }
+
+  }
+}
+.my-github:hover{
+  p{
+    color: white;
+  }
+  img{
+    filter: invert(0%)
   }
 }
 .copyright {
 span {
   @include li-p();
+  color: black;
+  font-weight: 700;
 }
 }
 
