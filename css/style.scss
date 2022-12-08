@@ -1,0 +1,320 @@
+//general
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+$gray-color: #383838;
+$bg-blue: #336666;
+$border-blue: #336666;
+$my-white: #E7E2DD;
+@mixin h2() {
+  text-align: center;
+  background-color: $bg-blue;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+@mixin li-p(){
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+  color: $my-white;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: $my-white;
+  font-size: 35px;
+  line-height: 140%;
+  margin: 0;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: $my-white;
+  font-size: 25px;
+  line-height: 140%;
+  margin: 0;
+
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+ // flex-direction: column;
+  //justify-content: space-between;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+}
+.nav-link {
+  transition: .3s;
+}
+.header, .main, .footer {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+//
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid white;
+
+ }
+body {
+  background-color: $gray-color;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.header {
+    .header-nav {
+      ul {
+        list-style: none; /*убираем маркеры списка*/
+        margin: 0; /*убираем отступы*/
+        padding-left: 0; /*убираем отступы*/
+        margin-top:25px; /*делаем отступ сверху*/
+        background:$gray-color; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+        height: 50px; /*задаем высоту*/
+        display: flex;
+       justify-content: right;
+        flex-wrap: wrap;
+      }
+      a {
+        text-decoration: none; /*убираем подчеркивание текста ссылок*/
+        background:$gray-color; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+        color:#fff; /*меняем цвет ссылок*/
+        padding:0 15px; /*добавляем отступ*/
+        font-family: "Roboto", sans-serif; /*меняем шрифт*/
+        line-height:50px; /*ровняем меню по вертикали*/
+        display: block;
+
+
+        border-right: 1px solid $border-blue; /*добавляем бордюр справа*/
+        -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+        -o-transition: all 0.3s 0.01s ease;
+        -webkit-transition: all 0.3s 0.01s ease;
+      }
+      a:hover {
+        background: $bg-blue;/*добавляем эффект при наведении*/
+      }
+      li {
+
+        float: left; /*Размещаем список горизонтально для реализации меню*/
+
+      }
+      .nav-link__lang {
+        border-right: none;
+      }
+    }
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-flow: row;
+
+  @media screen and (max-width: 700px){
+    flex-flow: column;
+  }
+
+    
+  }
+
+  .main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 40%;
+        @media screen and (max-width: 700px){
+      width: 100%;
+    }
+
+
+  .main-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 60%;
+    @media screen and (max-width: 700px){
+      width: 100%;
+    }
+  }
+}
+
+.section-profile{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    img {
+      width: auto;
+         }
+  }
+  h1{
+    padding-top: 10px;
+  }
+  h2{
+    padding-top: 10px;
+     }
+}
+.section-contacts {
+  margin-top: 20px;
+
+  h2 {
+    @include h2()
+  }
+      li {
+
+        .linkedin-link, .discord-link, .email-link, .git-link, .telegram-link, .locations-link{
+          display: flex;
+          text-decoration: none;
+          align-items: center;
+          text-align: center;
+          img{
+            width: 40px;
+            height: 100%;
+          }
+
+
+        }
+
+        .soc-text {
+          @include li-p()
+        }
+        :hover {
+          img, .soc-text{
+            filter: opacity(0.5) drop-shadow(0 0 0 $bg-blue);
+          }
+        }
+      }
+         }
+
+.section-skills {
+  h2 {
+    @include h2()
+  }
+  ul{
+
+    li{
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      text-align: center;
+      img{
+        width: 40px;
+        height: 100%;
+      }
+      p{
+        @include li-p()
+
+      }
+         }
+  }
+}
+
+.section-languages {
+  h2 {
+    @include h2()
+  }
+  ul{
+
+    li{
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      text-align: left;
+      img{
+        width: 40px;
+        height: 100%;
+      }
+      p{
+        @include li-p()
+
+
+      }
+    }
+  }
+}
+.section-summary {
+  display: flex;
+  text-decoration: none;
+
+  text-align: center;
+  h2 {
+    @include h2()
+     }
+  p{
+    @include li-p();
+    text-align: left;
+    padding-right: 10px;
+  }
+}
+.section-education {
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+
+  text-align: left;
+  h2 {
+    @include h2()
+  }
+  p{
+    @include li-p();
+    text-align: left;
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 4px;
+
+  }
+}
+.section-courses, .section-projects {
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+
+  text-align: left;
+  h2 {
+    @include h2()
+  }
+  li, a{
+    list-style-type: square;
+    @include li-p();
+    text-align: left;
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 4px;
+
+  }
+  a {
+    text-decoration: none;
+    padding: 0;
+  }
+}
+
