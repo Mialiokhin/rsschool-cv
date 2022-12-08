@@ -317,6 +317,11 @@ body {
     padding: 0;
   }
 }
+.section-projects {
+  a {
+    color: $bg-blue;
+  }
+}
 .section-code{
   display: flex;
   flex-flow: column;

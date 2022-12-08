@@ -338,6 +338,10 @@ body {
   padding: 0;
 }
 
+.section-projects a {
+  color: #336666;
+}
+
 .section-code {
   display: flex;
   flex-flow: column;
