@@ -105,17 +105,17 @@ body {
         display: block;
 
 
-        border-right: 1px solid $border-blue; /*добавляем бордюр справа*/
-        -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+        border-right: 1px solid $border-blue;
+        -moz-transition: all 0.3s 0.01s ease;
         -o-transition: all 0.3s 0.01s ease;
         -webkit-transition: all 0.3s 0.01s ease;
       }
       a:hover {
-        background: $bg-blue;/*добавляем эффект при наведении*/
+        background: $bg-blue;
       }
       li {
 
-        float: left; /*Размещаем список горизонтально для реализации меню*/
+        float: left;
 
       }
       .nav-link__lang {
