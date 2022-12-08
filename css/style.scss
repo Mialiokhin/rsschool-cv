@@ -1,0 +1,412 @@
+//general
+@font-face {
+  font-family: 'Roboto';
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+$gray-color: #383838;
+$bg-blue: #336666;
+$border-blue: #336666;
+$my-white: #E7E2DD;
+@mixin h2() {
+  text-align: center;
+  background-color: $bg-blue;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+@mixin li-p(){
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 140%;
+  color: $my-white;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: $my-white;
+  font-size: 35px;
+  line-height: 140%;
+  margin: 0;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: $my-white;
+  font-size: 25px;
+  line-height: 140%;
+  margin: 0;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+}
+.nav-link {
+  transition: .3s;
+}
+.header, .main, .footer {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+}
+//
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid white;
+  /*background-color: $gray-color;*/
+  background-image: url("../assets/img/bg.png");
+
+ }
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.header {
+    .header-nav {
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin:25px 0 0 0;
+        background:$gray-color;
+        height: 50px;
+        display: flex;
+       justify-content: right;
+        flex-wrap: wrap;
+      }
+      a {
+        text-decoration: none;
+        background:$gray-color;
+        color:#fff;
+        padding:0 15px;
+        font-family: "Roboto", sans-serif;
+        line-height:50px;
+        display: block;
+
+
+        border-right: 1px solid $border-blue;
+        -moz-transition: all 0.3s 0.01s ease;
+        -o-transition: all 0.3s 0.01s ease;
+        -webkit-transition: all 0.3s 0.01s ease;
+      }
+      a:hover {
+        background: $bg-blue;
+      }
+      li {
+
+        float: left;
+
+      }
+      .nav-link__lang {
+        border-right: none;
+      }
+    }
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-flow: row;
+
+  @media screen and (max-width: 700px){
+    flex-flow: column;
+  }
+
+    
+  }
+
+  .main-left {
+    background-color: $gray-color;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 40%;
+        @media screen and (max-width: 700px){
+      width: 100%;
+    }
+
+
+  .main-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 60%;
+    @media screen and (max-width: 700px){
+      width: 100%;
+    }
+  }
+}
+
+.section-profile{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    img {
+      width: auto;
+         }
+  }
+  h1{
+    padding-top: 10px;
+  }
+  h2{
+    padding-top: 10px;
+     }
+}
+.section-contacts {
+  margin-top: 20px;
+
+  h2 {
+    @include h2()
+  }
+      li {
+          .linkedin-link, .discord-link, .email-link, .git-link, .telegram-link, .locations-link{
+          display: flex;
+          position: relative;
+          text-decoration: none;
+          align-items: center;
+          text-align: center;
+                   img{
+            width: 40px;
+            height: 100%;
+          }
+
+
+        }
+
+        .soc-text {
+          @include li-p()
+        }
+        :hover {
+          img, .soc-text{
+            filter: opacity(0.5) drop-shadow(0 0 0 $bg-blue);
+             }
+        }
+      }
+  :hover{
+    right: 20px;
+  }
+          }
+
+.section-skills {
+  h2 {
+    @include h2()
+  }
+  ul{
+
+    li{
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      text-align: center;
+      img{
+        width: 40px;
+        height: 100%;
+      }
+      p{
+        @include li-p()
+
+      }
+         }
+  }
+}
+
+.section-languages {
+  h2 {
+    @include h2()
+  }
+  ul{
+
+    li{
+      display: flex;
+      text-decoration: none;
+      align-items: center;
+      text-align: left;
+      img{
+        width: 40px;
+        height: 100%;
+      }
+      p{
+        @include li-p()
+
+
+      }
+    }
+  }
+}
+.section-summary {
+  display: flex;
+  text-decoration: none;
+
+  text-align: center;
+  h2 {
+    @include h2()
+     }
+  p{
+    @include li-p();
+    text-align: left;
+    padding-right: 10px;
+  }
+}
+.section-education {
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+
+  text-align: left;
+  h2 {
+    @include h2()
+  }
+  p{
+    @include li-p();
+    text-align: left;
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 4px;
+
+  }
+}
+.section-courses, .section-projects {
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+
+  text-align: left;
+  h2 {
+    @include h2()
+  }
+  li, a{
+    list-style-type: square;
+    @include li-p();
+    text-align: left;
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 4px;
+
+  }
+  a {
+    text-decoration: none;
+    padding: 0;
+  }
+}
+.section-projects {
+  a {
+    color: $bg-blue;
+  }
+}
+.section-code{
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  a{
+    text-decoration: none;
+    @include li-p();
+    padding: 0;
+    color: $bg-blue;
+  }
+  p {
+    @include li-p();
+  }
+  h2 {
+    @include h2()
+  }
+  code {
+    margin-left: 50px;
+    margin-right: 50px;
+    @include li-p();
+    background-color: $gray-color; opacity:0.6;
+
+  }
+}
+
+//footer
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  background-color: $bg-blue;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+.rsschool-logo {
+  img {
+    height: 50px;
+  }
+  }
+.rsschool-logo:hover{
+  filter: invert(100%) ;
+}
+
+.my-github{
+  display: flex;
+  flex-flow: row;
+  .git-link__container{
+    img {
+      height: 50px;
+      filter: invert(100%)
+          }
+
+  }
+  .git-p__container{
+    a {
+      text-decoration: none;
+
+    }
+    p {
+      @include li-p();
+      font-weight: 700;
+      padding-left: 10px;
+      color: black;
+          }
+
+  }
+}
+.my-github:hover{
+  p{
+    color: white;
+  }
+  img{
+    filter: invert(0%)
+  }
+}
+.copyright {
+span {
+  @include li-p();
+  color: black;
+  font-weight: 700;
+}
+}
+
