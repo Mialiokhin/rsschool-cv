@@ -77,6 +77,11 @@ body {
   justify-content: right;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 700px) {
+  .header .header-nav ul {
+    height: 150px;
+  }
+}
 .header .header-nav a {
   text-decoration: none;
   background: #383838;
@@ -124,7 +129,7 @@ body {
 }
 @media screen and (max-width: 700px) {
   .main-left {
-    width: 100%;
+    width: 90%;
   }
 }
 .main-left .main-right {
@@ -163,6 +168,9 @@ body {
 
 .section-contacts {
   margin-top: 20px;
+  /* .email-link {
+     word-break: break-all;
+   }*/
 }
 .section-contacts h2 {
   text-align: center;
@@ -194,6 +202,17 @@ body {
 }
 .section-contacts li :hover img, .section-contacts li :hover .soc-text {
   filter: opacity(0.5) drop-shadow(0 0 0 #336666);
+}
+.section-contacts li .email-p_small {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .section-contacts li .email-p {
+    display: none;
+  }
+  .section-contacts li .email-p_small {
+    display: block;
+  }
 }
 .section-contacts :hover {
   right: 20px;
@@ -406,6 +425,12 @@ footer {
   background-color: #336666;
   padding-left: 30px;
   padding-right: 30px;
+}
+@media screen and (max-width: 700px) {
+  footer {
+    flex-flow: column;
+    height: 170px;
+  }
 }
 
 .rsschool-logo img {
