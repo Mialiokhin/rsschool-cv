@@ -31,3 +31,29 @@ Now, I have decided to pursue a new career path as a front-end developer, as I f
 motivated to learn and explore new technologies in order to become a highly sought-after specialist in this field.
 
 ---
+
+### Skills:
+
+- HTML5
+- CSS3(Bootstrap), sass
+- Java Script
+- GitHub
+- VS Code, WebStorm
+- Figma
+
+---
+
+### Code example:
+
+**Even or Odd** KATA from Codewars: Create a function that takes an integer as an argument and returns "Even" for even
+numbers or "Odd" for odd numbers.
+
+```
+function even_or_odd(number) {
+if (Number.isSafeInteger(number/2) === true) {
+    return 'Even'
+} else return 'Odd'
+}
+```
+
+---
