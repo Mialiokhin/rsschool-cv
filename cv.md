@@ -57,3 +57,27 @@ if (Number.isSafeInteger(number/2) === true) {
 ```
 
 ---
+
+### Work experience:
+
+- [**Plants**](https://mialiokhin-plants.netlify.app/) - task RS School stage 0 (2023)
+- [**Momentum**](https://mialiokhin-momentum.netlify.app) - task RS School stage 0 (2023)
+- [**PetStory online**](https://voluble-cassata-39b3b5.netlify.app/) - task RS School stage 1 (2022)
+
+---
+
+### Courses:
+
+- CS-50 video-course
+- JS manual [**learn.javascript.ru**](https://learn.javascript.ru/) and [**MDN**](https://developer.mozilla.org/ru/) (in
+  progress)
+- Stepik.org [**«Веб-разработка для начинающих: HTML и CSS»**](https://stepik.org/cert/1592428)
+- JS / FRONT-END. STAGE 0 (2023)
+
+---
+
+### Languages:
+
+- **English** - Pre-Intermediate
+- **Russian** - Native
+- **Polish** - A1
