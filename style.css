@@ -1,0 +1,8 @@
+body {
+    background-color: black;
+}
+
+body p {
+    color: white;
+    font-size: 100px;
+}
